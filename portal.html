@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor Portal | AnthroSpec Advisory</title>
+  <meta name="description" content="Returning clients: submit audit requests directly through the Contractor Portal.">
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo-mark.png">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .brand-font { font-family: 'Space Grotesk', sans-serif; }
+    .mono-font { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="border-b border-zinc-200 bg-white sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo-mark.png" alt="AnthroSpec Advisory" class="h-9 w-auto">
+        <span class="brand-font text-xl font-bold tracking-tight">AnthroSpec Advisory</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7">
+        <a href="audits.html" class="mono-font text-sm font-medium text-zinc-500 hover:text-blue-600 transition-colors">AUDITS</a>
+        <a href="clinical-edge.html" class="mono-font text-sm font-medium text-zinc-500 hover:text-blue-600 transition-colors">CLINICAL_EDGE</a>
+        <a href="portal.html" class="mono-font text-sm font-medium text-blue-600">PORTAL</a>
+        <a href="mailto:anand@anthrospecadvisory.com" class="mono-font text-sm font-medium hover:text-blue-600 transition-colors">INITIATE_CONTACT</a>
+      </div>
+      <button id="navToggle" class="md:hidden mono-font text-xs border border-zinc-300 px-3 py-2 hover:border-zinc-900 transition-colors">MENU</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-zinc-200 px-6 py-4 flex-col gap-4 bg-white">
+      <a href="audits.html" class="mono-font text-sm font-medium text-zinc-600">AUDITS</a>
+      <a href="clinical-edge.html" class="mono-font text-sm font-medium text-zinc-600">CLINICAL_EDGE</a>
+      <a href="portal.html" class="mono-font text-sm font-medium text-blue-600">PORTAL</a>
+      <a href="mailto:anand@anthrospecadvisory.com" class="mono-font text-sm font-medium">INITIATE_CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="max-w-5xl mx-auto px-6 py-20 border-b border-zinc-200">
+    <p class="mono-font text-sm text-blue-600 mb-6">// RETURNING_CLIENTS</p>
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6">Contractor Portal</h1>
+    <p class="text-lg text-zinc-600 max-w-2xl leading-relaxed">Skip the sales funnel. Submit audit requests directly — scoped per room, billed flat.</p>
+  </header>
+
+  <section class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- LOCKED STATE -->
+    <div id="gateCard" class="max-w-xl mx-auto bg-white border border-zinc-200 p-10 text-center">
+      <p class="mono-font text-xs text-zinc-400 mb-4">[ RESTRICTED ]</p>
+      <h2 class="text-2xl font-bold tracking-tight mb-3">Enter Portal Passcode</h2>
+      <p class="text-zinc-600 mb-8">This portal is reserved for active contractor clients.</p>
+      <form id="gateForm" class="flex flex-col sm:flex-row gap-3 justify-center">
+        <input type="password" id="gateInput" placeholder="Passcode" autocomplete="off"
+               class="mono-font text-sm border border-zinc-300 px-4 py-3 w-full sm:w-56 focus:outline-none focus:border-zinc-900 transition-colors">
+        <button type="submit" class="bg-zinc-900 text-white font-medium px-6 py-3 hover:bg-zinc-800 transition-colors">Unlock</button>
+      </form>
+      <p id="gateError" class="text-red-600 text-sm mt-4 h-5"></p>
+      <p class="text-sm text-zinc-500 mt-4">New here? <a href="audits.html" class="text-zinc-900 underline hover:text-blue-600">Start with the audit tiers</a> to get set up.</p>
+    </div>
+
+    <!-- UNLOCKED STATE -->
+    <div id="portalContent" class="hidden max-w-3xl mx-auto">
+      <div class="bg-white border border-zinc-200 p-8 md:p-10">
+        <p class="mono-font text-xs text-blue-600 mb-2">// ACCESS_GRANTED</p>
+        <h2 class="text-2xl font-bold tracking-tight mb-3">Submit an Audit Request</h2>
+        <p class="text-zinc-600 mb-8">Complete the form below. We'll confirm scope and flat-fee pricing per room before work begins.</p>
+
+        <!-- ============================================================
+             FILLOUT FORM EMBED
+             1. In Fillout, open your form → Share → Embed.
+             2. Copy your form ID and paste it below in place of
+                YOUR_FILLOUT_FORM_ID.
+             ============================================================ -->
+        <div class="border-2 border-dashed border-zinc-300 p-10 text-center bg-zinc-50">
+          <p class="font-medium text-zinc-900 mb-2">Fillout form embed goes here</p>
+          <p class="text-sm text-zinc-500">Paste your Fillout <span class="mono-font text-xs">Standard embed</span> snippet in <span class="mono-font text-xs">portal.html</span> where marked, replacing <span class="mono-font text-xs">YOUR_FILLOUT_FORM_ID</span>.</p>
+          <!--
+          <div style="width:100%;height:640px;" data-fillout-id="YOUR_FILLOUT_FORM_ID" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+          <script src="https://server.fillout.com/embed/v1/"></script>
+          -->
+        </div>
+
+        <div class="mt-8 bg-zinc-50 border border-zinc-200 p-5">
+          <p class="mono-font text-xs text-zinc-500 leading-relaxed"><span class="text-zinc-900 font-medium">[ SECURITY_NOTE ]</span> This page uses a lightweight passcode gate suitable for keeping casual visitors out of a static site. It is not true authentication — anyone can view page source. For sensitive client data, front this page with a real access layer such as Cloudflare Access, or use your Fillout account's own sharing controls.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-950 text-zinc-500 border-t border-zinc-800">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <div class="bg-white rounded px-3 py-2 inline-block mb-4">
+            <img src="assets/logo-full.png" alt="AnthroSpec Advisory LLC" class="h-10 w-auto">
+          </div>
+          <p class="text-sm max-w-xs">Clinical-grade architectural risk mitigation for general contractors and residential remodelers.</p>
+        </div>
+        <div class="flex gap-16">
+          <div class="flex flex-col gap-3">
+            <a href="index.html" class="mono-font text-xs hover:text-white transition-colors">HOME</a>
+            <a href="audits.html" class="mono-font text-xs hover:text-white transition-colors">AUDITS</a>
+            <a href="clinical-edge.html" class="mono-font text-xs hover:text-white transition-colors">CLINICAL_EDGE</a>
+            <a href="portal.html" class="mono-font text-xs hover:text-white transition-colors">PORTAL</a>
+          </div>
+          <div class="flex flex-col gap-3">
+            <span class="mono-font text-xs text-zinc-600">TIER_01 — $295</span>
+            <span class="mono-font text-xs text-zinc-600">TIER_02 — $395</span>
+            <span class="mono-font text-xs text-zinc-600">TIER_03 — $395</span>
+            <span class="mono-font text-xs text-zinc-600">TIER_04 — $495</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 pt-6 flex flex-col md:flex-row justify-between gap-3">
+        <span class="mono-font text-xs">© <span id="year">2026</span> ANTHROSPEC ADVISORY LLC</span>
+        <span class="mono-font text-xs">ANSI_A117.1 // FALL_PREVENTION // COGNITIVE_SAFETY</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
