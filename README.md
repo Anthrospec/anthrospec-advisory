@@ -1,47 +1,19 @@
-# AnthroSpec Advisory LLC — Website (Tailwind Build)
+# AnthroSpec Advisory LLC — Website (Single-Page Build)
 
-Technical/stark 4-page marketing site built with **Tailwind CSS via CDN**.
-No build step, no dependencies. Ready for **GitHub Pages**.
+Single-page website for AnthroSpec Advisory LLC. The entire site is a single `index.html` — a brutalist-styled build using **Tailwind CSS via CDN**. No build step, no dependencies.
 
-## Pages
+- `index.html` — the whole site: hero, Audit Tiers (4 cards), Evidence-Based Protocol methodology, contact, and footer
+- `assets/` — logo assets (logo-mark.png, logo-full.png, og-image.png)
 
-| File | Page |
-|---|---|
-| `index.html` | Homepage — "Protect Your Build. Win the Bid." + 01/02/03 protocol |
-| `audits.html` | Audits & Pricing — the 4 per-room flat-fee tiers |
-| `clinical-edge.html` | The Clinical Edge — OTR / Clinical Care Manager credentials, WeHSA/CASPAR → ANSI |
-| `portal.html` | Contractor Portal — passcode-gated page with Fillout embed slot |
-| `script.js` | Mobile nav, footer year, portal gate |
-| `assets/` | Logo files (`logo-mark.png`, `logo-full.png`, transparent) |
+## Contact
 
-## Before you publish
+anand@anthrospecadvisory.com
 
-1. **Portal passcode** — open `script.js` and change `GATE_CODE = "anthrospec"` to your own
-   passcode. (Lightweight gate only — see the security note on `portal.html` for real
-   protection options like Cloudflare Access.)
-2. **Fillout form** — open `portal.html`, find the `FILLOUT FORM EMBED` comment, and paste
-   your Fillout *Standard embed* snippet, replacing `YOUR_FILLOUT_FORM_ID`.
-3. Contact CTAs point to `anand@anthrospecadvisory.com` — update if needed.
+## Deploy with GitHub Pages
 
-## Deploy to GitHub Pages
+1. Go to **Settings** > **Pages**
+2. Under Build and deployment, choose **Deploy from a branch**
+3. Select branch **main** and folder **/ (root)**, then Save
+4. The site goes live at https://blisslion.github.io/anthrospec-advisory/
 
-1. Create a new repo on GitHub (e.g. `anthrospec-advisory`), **public**.
-2. Upload everything in this folder to the repo root (or push via git).
-3. Go to **Settings → Pages**.
-4. Under *Build and deployment*, set **Source** to `Deploy from a branch`,
-   **Branch** to `main`, folder `/ (root)`. Save.
-5. Your site goes live at `https://<your-username>.github.io/anthrospec-advisory/`
-   within a minute or two.
-
-Optional: add a custom domain under Settings → Pages → Custom domain.
-
-## Local preview
-
-```bash
-cd anthrospec-site-tailwind
-python3 -m http.server 8000
-# open http://localhost:8000
-```
-
-> Note: an earlier custom-CSS version of this site lives in `../anthrospec-site/`
-> if you ever want to compare the two designs.
+Note: GitHub Pages can take a minute or two to redeploy after each push.
