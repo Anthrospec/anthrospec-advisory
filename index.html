@@ -61,7 +61,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="max-w-5xl mx-auto px-6 py-24 border-b border-zinc-200">
+  <header class="max-w-5xl mx-auto px-6 py-24 border-b border-zinc-200 bg-[radial-gradient(#d4d4d8_1px,transparent_1px)] [background-size:20px_20px]">
     <h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-6 max-w-3xl">Clinical-Grade Architectural Audits.</h1>
     <p class="text-lg text-zinc-600 max-w-2xl leading-relaxed mb-10">Precision plan reviews for residential remodelers and general contractors. Utilizing validated environmental safety frameworks and Universal Design principles, we translate clinical mobility profiles into rigorous ANSI A117.1 and ADA-aligned structural code—mitigating environmental risk and protecting your build.</p>
     <a href="#intake" class="inline-block bg-blue-950 text-white border border-blue-950 font-medium px-6 py-3 hover:bg-white hover:text-blue-950 active:scale-[0.98] transition-all transition-transform duration-75">Request an Audit</a>
@@ -87,7 +87,11 @@
   </div>
 
   <!-- Section 1: Services Grid -->
-  <section id="services" class="max-w-5xl mx-auto py-24 px-6 border-b border-zinc-200 bg-zinc-50">
+  <section id="services" class="max-w-5xl mx-auto py-24 px-6 border-b border-zinc-200 bg-zinc-50 relative">
+    <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
     <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-4">// SERVICES</p>
     <h2 class="brand-font text-3xl font-bold tracking-tighter mb-4">Audit Tiers</h2>
     <p class="text-zinc-600 max-w-2xl mb-12">Four clinical-grade audit tiers. Every one priced flat, per room or per zone — tight scoping keeps analysis precise and fees transparent.</p>
@@ -177,7 +181,11 @@
   </section>
 
   <!-- Section 3: Client Intake Form -->
-  <section id="intake" class="max-w-5xl mx-auto py-24 px-6 border-b border-zinc-200 bg-zinc-50">
+  <section id="intake" class="max-w-5xl mx-auto py-24 px-6 border-b border-zinc-200 bg-zinc-50 relative">
+    <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
     <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-4">// INTAKE</p>
     <h2 class="brand-font text-3xl font-bold tracking-tighter mb-4">Intake Protocol</h2>
     <p class="text-zinc-600 max-w-2xl mb-12">Submit your project for audit. We confirm scope and flat-fee pricing per room before work begins.</p>
@@ -215,11 +223,17 @@
     </form>
   </section>
 
-  <!-- Section 4: Footer -->
-  <footer class="bg-blue-950 text-zinc-400 py-12 px-6">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start gap-6">
-      <p class="text-sm">© 2026 AnthroSpec Advisory LLC <br class="md:hidden"><span class="text-xs text-zinc-500 mt-1 md:mt-0 md:ml-2">Clinical Direction: OTR/L, CDP, CAPS</span></p>
-      <a href="mailto:advisory@anthrospecadvisory.com" class="mono-font text-xs tracking-widest uppercase text-white hover:text-zinc-300 transition-all duration-75">advisory@anthrospecadvisory.com</a>
+  <!-- Section 4: Footer / Telemetry -->
+  <footer class="bg-zinc-50">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center border-t border-zinc-200">
+      <div class="flex gap-6 mono-font text-[10px] text-zinc-400 tracking-widest uppercase">
+        <span>&copy; 2026 AnthroSpec Advisory</span>
+        <span class="hidden md:inline-block">SYS.NODE_84</span>
+      </div>
+      <div class="mono-font text-[10px] text-zinc-400 tracking-widest mt-4 md:mt-0 flex gap-4">
+        <span>COORD: 41.9898° N, 87.7289° W</span>
+        <span class="hidden md:inline-block text-orange-600">STATE: ACTIVE</span>
+      </div>
     </div>
   </footer>
 
