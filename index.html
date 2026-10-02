@@ -203,8 +203,8 @@
     <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-4">// INTAKE</p>
     <h2 class="brand-font text-3xl font-bold tracking-tighter mb-4">Intake Protocol</h2>
     <p class="text-zinc-600 max-w-2xl mb-12">Submit your project for audit. We confirm scope and flat-fee pricing per room before work begins.</p>
-    <!-- FORM INTEGRATION: Replace the mailto: action below with your Fillout/Formspree embed script when ready for live pipeline integration. -->
-    <form action="mailto:intake@anthrospecadvisory.com" method="post" enctype="text/plain" class="bg-white border border-zinc-200 p-8 md:p-10">
+    <!-- FORM INTEGRATION: submissions post to Formspree ("Audit Intake") and forward to intake@anthrospecadvisory.com -->
+    <form action="https://formspree.io/f/xvkgjejq" method="post" class="bg-white border border-zinc-200 p-8 md:p-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div>
           <label for="intake-name" class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 block mb-2">FULL_NAME</label>
