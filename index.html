@@ -61,10 +61,16 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="max-w-5xl mx-auto px-6 py-24 border-b border-zinc-200 bg-[radial-gradient(#d4d4d8_1px,transparent_1px)] [background-size:20px_20px]">
+  <header class="max-w-5xl mx-auto px-6 py-24 border-b border-zinc-200 relative bg-[radial-gradient(#d4d4d8_1px,transparent_1px)] [background-size:20px_20px]">
+    <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
+    <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
     <h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-6 max-w-3xl">Clinical-Grade Architectural Audits.</h1>
     <p class="text-lg text-zinc-600 max-w-2xl leading-relaxed mb-10">Precision plan reviews for residential remodelers and general contractors. Utilizing validated environmental safety frameworks and Universal Design principles, we translate clinical mobility profiles into rigorous ANSI A117.1 and ADA-aligned structural code—mitigating environmental risk and protecting your build.</p>
-    <a href="#intake" class="inline-block bg-blue-950 text-white border border-blue-950 font-medium px-6 py-3 hover:bg-white hover:text-blue-950 active:scale-[0.98] transition-all transition-transform duration-75">Request an Audit</a>
+    <button onclick="document.getElementById('intake-tier').selectedIndex = 0; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-4 px-8 hover:bg-orange-500 hover:text-white transition-colors duration-150 inline-block text-center cursor-pointer mt-6">
+  INITIATE AUDIT
+</button>
   </header>
 
   <!-- Clinical Edge / Credential Stack -->
@@ -97,56 +103,64 @@
     <p class="text-zinc-600 max-w-2xl mb-12">Four clinical-grade audit tiers. Every one priced flat, per room or per zone — tight scoping keeps analysis precise and fees transparent.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-zinc-200 border border-zinc-200">
 
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
+      <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500">
         <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">01 // AUDIT</p>
         <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Fall-Zero &amp; ANSI Audit</h3>
         <p class="text-zinc-600 mb-6">Egress friction, mobility clearances, DCOF slip-resistance, and transitional lighting — the essential compliance baseline for every remodel.</p>
-        <p class="mono-font text-xs tracking-widest uppercase text-blue-950"><span class="inline-block transition-transform duration-150 hover:scale-110">$295</span> <span class="text-zinc-500">/ ROOM — FLAT FEE</span></p>
+        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$295</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ ROOM — FLAT FEE</span></p>
         <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 PDF Spec</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
         </div>
-        <a href="#intake" class="inline-block mono-font text-xs tracking-widest uppercase bg-blue-950 text-white px-6 py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150">INITIATE_AUDIT</a>
+        <button onclick="document.getElementById('intake-tier').selectedIndex = 0; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
       </div>
 
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
+      <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500">
         <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">02 // STRUCTURAL</p>
         <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Bariatric Structural Audit</h3>
         <p class="text-zinc-600 mb-6">Reinforced floor joists, 500+ lb shear force blocking, and egress widths exceeding standard ANSI limits — specified per zone.</p>
-        <p class="mono-font text-xs tracking-widest uppercase text-blue-950"><span class="inline-block transition-transform duration-150 hover:scale-110">$395</span> <span class="text-zinc-500">/ ROOM — FLAT FEE</span></p>
+        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$395</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ ROOM — FLAT FEE</span></p>
         <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 PDF Spec</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
         </div>
-        <a href="#intake" class="inline-block mono-font text-xs tracking-widest uppercase bg-blue-950 text-white px-6 py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150">INITIATE_AUDIT</a>
+        <button onclick="document.getElementById('intake-tier').selectedIndex = 1; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
       </div>
 
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
+      <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500">
         <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">03 // COGNITIVE</p>
         <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Dementia-Safe &amp; Cognitive Audit</h3>
         <p class="text-zinc-600 mb-6">Housing Enabler methodology, LRV/contrast finish recommendations, glare mitigation, and architectural wandering-prevention strategies.</p>
-        <p class="mono-font text-xs tracking-widest uppercase text-blue-950"><span class="inline-block transition-transform duration-150 hover:scale-110">$395</span> <span class="text-zinc-500">/ ROOM — FLAT FEE</span></p>
+        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$395</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ ROOM — FLAT FEE</span></p>
         <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 PDF Spec</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
         </div>
-        <a href="#intake" class="inline-block mono-font text-xs tracking-widest uppercase bg-blue-950 text-white px-6 py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150">INITIATE_AUDIT</a>
+        <button onclick="document.getElementById('intake-tier').selectedIndex = 2; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
       </div>
 
-      <div class="bg-zinc-50 border border-zinc-200 p-8 transition-all duration-150 hover:bg-white hover:border-orange-500">
+      <div class="bg-zinc-50 border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:bg-white hover:border-orange-500">
         <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-3">04 // FUTURE-PROOF</p>
         <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Progressive Condition Audit</h3>
         <p class="text-zinc-600 mb-6">Day-one pre-framing for day-1000 needs, including ceiling joist blocking pre-installed for future Hoyer track lifts.</p>
-        <p class="mono-font text-xs tracking-widest uppercase text-blue-950"><span class="inline-block transition-transform duration-150 hover:scale-110">$495</span> <span class="text-zinc-500">/ ROOM — FLAT FEE</span></p>
+        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$495</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ ROOM — FLAT FEE</span></p>
         <div class="py-4 border-y border-zinc-200 my-4 space-y-1">
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Form</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 PDF Spec</p>
           <p class="mono-font text-[10px] text-zinc-500 uppercase"><span class="text-orange-600 font-bold">SLA:</span> 48-72 Hours</p>
         </div>
-        <a href="#intake" class="inline-block mono-font text-xs tracking-widest uppercase bg-blue-950 text-white px-6 py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150">INITIATE_AUDIT</a>
+        <button onclick="document.getElementById('intake-tier').selectedIndex = 3; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
+        INITIATE AUDIT
+      </button>
       </div>
 
     </div>
