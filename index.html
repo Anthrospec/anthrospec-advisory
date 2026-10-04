@@ -49,10 +49,10 @@
           <a href="mailto:intake@anthrospecadvisory.com" class="mono-font text-xs tracking-widest uppercase font-semibold text-orange-600 hover:text-orange-500 transition-all duration-75">INITIATE_CONTACT</a>
           <div class="flex items-center gap-2">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full bg-orange-500 opacity-75"></span>
+              <span id="clock-ping" class="animate-ping absolute inline-flex h-full w-full bg-orange-500 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
             </span>
-            <span class="mono-font text-[10px] tracking-widest text-zinc-500">SYSTEM.ACTIVE</span>
+            <span id="site-clock" class="mono-font text-[10px] tracking-widest text-zinc-500">--:--:--</span>
           </div>
         </div>
 
@@ -268,5 +268,19 @@
     </div>
   </footer>
 
+<script>
+    // Live Chicago clock; re-triggers the status pulse once per second so the flash is functional.
+    function tickClock() {
+      try {
+        var t = new Date().toLocaleTimeString('en-US', { timeZone: 'America/Chicago', hour12: false, timeZoneName: 'short' });
+        var el = document.getElementById('site-clock');
+        if (el) el.textContent = 'CHI ' + t;
+      } catch (e) {}
+      var ping = document.getElementById('clock-ping');
+      if (ping) { ping.classList.remove('animate-ping'); void ping.offsetWidth; ping.classList.add('animate-ping'); }
+    }
+    tickClock();
+    setInterval(tickClock, 1000);
+  </script>
 </body>
 </html>
