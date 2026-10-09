@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AnthroSpec Advisory | Technical & Architectural Services</title>
+  <title>AnthroSpec Advisory | Chicago</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/logo-mark.png">
-  <meta property="og:title" content="AnthroSpec Advisory | Precision Environmental & Accessibility Audits">
-  <meta property="og:description" content="Precision plan reviews for general contractors. Translating anthropometric data into ANSI A117.1 spatial code.">
-  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:title" content="AnthroSpec Advisory">
+  <meta property="og:description" content="Contractor spatial audits by waitlist. A clinician-owned evaluation practice for aging-in-place planning is in formation.">
   <meta property="og:type" content="website">
   <style>
     body { font-family: 'Inter', sans-serif; }
@@ -26,8 +25,8 @@
 
   <!-- Navigation -->
   <nav class="border-b border-zinc-200 bg-white sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0">
-      
+    <div class="max-w-5xl mx-auto px-6 py-2 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0">
+
       <!-- Brand & Logo -->
       <a href="#" class="flex items-center gap-2.5">
         <img src="assets/logo-mark.png" alt="AnthroSpec Advisory" class="h-9 md:h-10 w-auto object-contain">
@@ -36,17 +35,10 @@
 
       <!-- Right Side Actions & Links -->
       <div class="flex items-center gap-6 w-full md:w-auto justify-between md:justify-end">
-        
-        <!-- Desktop Nav Links (Hidden on Mobile/Tablet) -->
-        <div class="hidden lg:flex items-center gap-6">
-          <a href="#services" class="mono-font text-xs uppercase tracking-widest text-zinc-500 hover:text-blue-950 transition-colors duration-150">Services</a>
-          <a href="#methodology" class="mono-font text-xs uppercase tracking-widest text-zinc-500 hover:text-blue-950 transition-colors duration-150">Methodology</a>
-          <a href="#intake" class="mono-font text-xs uppercase tracking-widest text-zinc-500 hover:text-blue-950 transition-colors duration-150">Intake Protocol</a>
-        </div>
-        
+
         <!-- Contact & Status Indicator (Visible on Mobile & Desktop) -->
         <div class="flex items-center gap-4">
-          <a href="mailto:intake@anthrospecadvisory.com" class="mono-font text-xs tracking-widest uppercase font-semibold text-blue-950 hover:text-orange-600 transition-all duration-75">INITIATE CONTACT</a>
+          <a href="#waitlist-form" class="mono-font text-xs tracking-widest uppercase font-semibold text-blue-950 hover:text-orange-600 transition-all duration-75">JOIN THE LIST</a>
           <div class="flex items-center gap-2">
             <span class="relative flex h-2 w-2">
               <span id="clock-ping" class="animate-ping absolute inline-flex h-full w-full bg-orange-500 opacity-75"></span>
@@ -61,198 +53,99 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="max-w-5xl mx-auto px-6 py-24 border-b border-zinc-200 relative bg-[radial-gradient(#d4d4d8_1px,transparent_1px)] [background-size:20px_20px]">
+  <header class="max-w-5xl mx-auto px-6 py-24 border-b border-zinc-200 relative">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(#d4d4d8_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" aria-hidden="true"></div>
     <div class="absolute z-[60] -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
     <div class="absolute z-[60] -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute z-[60] -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute z-[60] -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-6 max-w-3xl">Precision Environmental &amp; Accessibility Audits.</h1>
-    <p class="text-lg text-zinc-600 max-w-2xl leading-relaxed mb-10">Precision plan reviews for residential remodelers and general contractors. Utilizing validated environmental safety frameworks and Universal Design principles, we translate anthropometric profiles into rigorous ANSI A117.1 spatial layouts and smart home integrations—mitigating environmental risk and protecting your build.</p>
-    <button onclick="document.getElementById('intake-tier').selectedIndex = 0; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-4 px-8 hover:bg-orange-500 hover:text-white transition-colors duration-150 inline-block text-center cursor-pointer mt-6">
-  INITIATE AUDIT
-</button>
+    <p class="mono-font text-xs tracking-widest uppercase text-orange-600 mb-6">// ANTHROSPEC ADVISORY LLC</p>
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-6 max-w-3xl">AnthroSpec is expanding.</h1>
+    <p class="text-lg text-zinc-600 max-w-2xl leading-relaxed mb-10">A clinician-owned evaluation practice is in formation — home evaluations and letters of medical necessity for aging-in-place modifications, with a collaboration program for the contractors who build them. Our standalone spatial audit service has been retired. Join the list below for launch notification or contractor partner onboarding.</p>
+    <a href="#waitlist-form" class="inline-block bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 px-6 hover:bg-orange-500 transition-colors duration-150">JOIN THE LIST</a>
   </header>
 
-  <!-- Accessibility Credentials / Credential Stack -->
-  <div class="max-w-5xl mx-auto px-6 py-8 bg-zinc-50">
-    <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-6">// ACCESSIBILITY &amp; DESIGN CREDENTIALS</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-zinc-200 border border-zinc-200">
-      <div class="bg-white p-6">
-        <p class="brand-font font-bold text-lg text-blue-950">OTR/L</p>
-        <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-2">Registered &amp; Licensed Occupational Therapists</p>
-        <p class="text-xs text-zinc-600 leading-relaxed">Leveraging the Person-Environment-Occupation (PEO) model exclusively for advanced spatial and architectural design. By analyzing the intersection of human capabilities, daily routines, and environmental friction, we translate complex biomechanical and occupational needs into precise, builder-ready architectural parameters.</p>
-      </div>
-      <div class="bg-white p-6">
-        <p class="brand-font font-bold text-lg text-blue-950">CDP</p>
-        <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-2">Certified Dementia Practitioners</p>
-        <p class="text-xs text-zinc-600 leading-relaxed">Expertise applied directly to cognitive-friendly architectural layouts. We design spaces utilizing advanced lighting optimization, visual contrast mapping, and intuitive wayfinding to reduce environmental confusion and support spatial safety.</p>
-      </div>
-      <div class="bg-white p-6">
-        <p class="brand-font font-bold text-lg text-blue-950">CAPS</p>
-        <p class="mono-font text-[10px] tracking-widest uppercase text-zinc-500 mb-2">National Association of Home Builders (NAHB) Certified Aging-in-Place Specialists</p>
-        <p class="text-xs text-zinc-600 leading-relaxed">Bridging the gap between human functional requirements and rigid residential building codes. We design spatial and environmental modifications to integrate seamlessly with standard construction practices and ANSI A117.1.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contractor Risk Mitigation -->
-  <div class="max-w-5xl mx-auto px-6 py-16 bg-zinc-50 relative">
-    <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-4">// SPATIAL DESIGN &amp; RISK MITIGATION</p>
-    <h2 class="brand-font text-3xl font-bold tracking-tighter mb-8">Protect Your Margins. Deliver Premium Results.</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-zinc-200 border border-zinc-200">
-      <div class="bg-white p-6">
-        <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-3">// PROBLEM</p>
-        <p class="text-sm text-zinc-600 leading-relaxed">General contractors are construction experts, not human-factors engineers. While standard building codes provide a baseline, guessing the exact geometry required for a client's daily routines and specific mobility devices introduces massive financial risk. A single spatial miscalculation results in expensive tear-outs, destroyed profit margins, and a compromised client experience.</p>
-      </div>
-      <div class="bg-white p-6">
-        <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-3">// SOLUTION</p>
-        <p class="text-sm text-zinc-600 leading-relaxed">AnthroSpec bridges the gap between human occupational needs and rigid construction codes. By analyzing the intersection of daily activities and environmental friction, we translate complex spatial requirements into exact clearances. You execute the build; we deliver the specialized documentation that positions you to win premium bids — giving your clients confidence the space works with future-proofed adaptability for aging in place as needs evolve.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 1: Services Grid -->
-  <section id="services" class="max-w-5xl mx-auto py-24 px-6 bg-zinc-50 relative">
-    <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-4">// SERVICES</p>
-    <h2 class="brand-font text-3xl font-bold tracking-tighter mb-4">Audit Tiers</h2>
-    <p class="text-zinc-600 max-w-2xl mb-12">Three precision-grade audit tiers. Every tier is scoped strictly for spatial clearance, environmental optimization, and smart home integration to keep analysis precise and fees transparent.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-zinc-200 border border-zinc-200">
-
-      <div class="bg-white border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:border-orange-500">
-        <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Standard Spatial Audit</h3>
-        <p class="text-zinc-600 mb-6">Baseline spatial clearance verification and hazard identification for a single, contained residential zone.</p>
-        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$395</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ ROOM — FLAT FEE</span></p>
-        <p class="text-zinc-600"><span class="font-semibold text-blue-950">Scope:</span> Limited to 1 single room/zone (e.g., 1 bathroom, 1 kitchen, or 1 entryway). Maximum 300 contiguous square feet.</p>
-
-        <div class="py-4 border-y border-zinc-200 my-4 space-y-2">
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 4-6 Site Photos + Exact Room Dimensions + Scope Form</p>
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI A117.1 Spatial Layout + Baseline Hardware Recommendations</p>
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-orange-600 font-bold">TURNAROUND:</span> 24 Hours</p>
+  <!-- Two Programs -->
+  <section class="bg-zinc-100">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <p class="mono-font text-xs tracking-widest uppercase text-orange-600 mb-8">// TWO PROGRAMS</p>
+      <div class="grid md:grid-cols-2 gap-px bg-zinc-300 border border-zinc-300">
+        <div class="bg-white p-8">
+          <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-3">// FOR CONTRACTORS</p>
+          <h2 class="text-2xl font-bold tracking-tight mb-3">Contractor Collaboration — In Formation</h2>
+          <p class="text-sm text-zinc-600 leading-relaxed">When the practice launches, contractors will be able to bring us in for client evaluations and letters of medical necessity, and receive build-ready design scopes — dimensions, clearances, and fixture specifications, with no medical information attached. Join below and select Contractor / Builder to be onboarded as a collaboration partner.</p>
         </div>
-        <button onclick="document.getElementById('intake-tier').selectedIndex = 0; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
-        INITIATE AUDIT
-      </button>
-      </div>
-
-      <div class="bg-white border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:border-orange-500 relative">
-        <span class="self-start bg-orange-600 text-white px-3 py-1 mono-font text-[10px] tracking-widest uppercase mb-4">Recommended</span>
-        <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Advanced Environmental &amp; Smart Home Audit</h3>
-        <p class="text-zinc-600 mb-6">Advanced environmental audit integrating ANSI clearances with smart home automation for complex, multi-zone aging-in-place remodels.</p>
-        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$595</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ ZONE — FLAT FEE</span></p>
-        <p class="text-zinc-600"><span class="font-semibold text-blue-950">Scope:</span> Limited to 2-3 contiguous zones (e.g., Master Bedroom + En-Suite Bath + Transitional Hallway). Maximum 800 contiguous square feet.</p>
-
-        <div class="py-4 border-y border-zinc-200 my-4 space-y-2">
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> 8-10 Photos + Dimensioned Sketch + Scope Form</p>
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> ANSI Spec + Smart Home Interoperability Plan + Comprehensive Bill of Materials (BOM)</p>
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-orange-600 font-bold">TURNAROUND:</span> 48 Hours</p>
-        </div>
-        <button onclick="document.getElementById('intake-tier').selectedIndex = 1; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
-        INITIATE AUDIT
-      </button>
-      </div>
-
-      <div class="bg-white border border-zinc-200 p-8 flex flex-col transition-all duration-150 hover:border-orange-500">
-        <h3 class="brand-font text-xl font-bold tracking-tighter text-blue-950 mb-3">Enterprise Verification Suite</h3>
-        <p class="text-zinc-600 mb-6">Full-scope environmental design audits and layout verifications for high-volume builders, developers, or whole-home gut remodels.</p>
-        <p class="mb-4"><span class="text-4xl font-bold text-blue-950">$995</span> <span class="mono-font text-xs tracking-widest uppercase text-zinc-500">/ PROJECT — FLAT FEE</span></p>
-        <p class="text-zinc-600"><span class="font-semibold text-blue-950">Scope:</span> 1 complete unit floorplan (up to 2,500 sq. ft.). Secondary floorplans or custom multi-unit developments require custom quoting.</p>
-
-        <div class="py-4 border-y border-zinc-200 my-4 space-y-2">
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-blue-950 font-bold">INPUT:</span> Full Architectural Site Plans + Scope Video</p>
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-blue-950 font-bold">OUTPUT:</span> Annotated Spatial Layouts + Enterprise BOM + Contractor Digital Sign-off Sheet</p>
-          <p class="mono-font text-xs text-zinc-500 uppercase"><span class="text-orange-600 font-bold">TURNAROUND:</span> 48-72 Hours</p>
-        </div>
-        <button onclick="document.getElementById('intake-tier').selectedIndex = 2; document.getElementById('intake').scrollIntoView({behavior: 'smooth'});" class="w-full bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 hover:bg-orange-500 hover:text-white transition-colors duration-150 mt-auto cursor-pointer">
-        INITIATE AUDIT
-      </button>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Section 2: Methodology -->
-  <section id="methodology" class="max-w-5xl mx-auto py-24 px-6 bg-zinc-50">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div>
-        <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-4">// METHODOLOGY</p>
-        <h2 class="brand-font text-3xl font-bold tracking-tighter">Evidence-Based Protocol</h2>
-      </div>
-      <div>
-        <div class="border border-zinc-200 bg-white p-6">
-          <p class="mono-font text-xs tracking-widest text-blue-950 mb-2">01 // HAZARD EXTRACTION</p>
-          <p class="text-zinc-600">Environmental hazard extraction. We identify binary friction points, egress limitations, and accessibility barriers directly from your site photos using standardized spatial safety matrices.</p>
-        </div>
-        <div class="border border-zinc-200 bg-white p-6 -mt-px">
-          <p class="mono-font text-xs tracking-widest text-blue-950 mb-2">02 // FUNCTIONAL-SPATIAL MAPPING</p>
-          <p class="text-zinc-600">Person-Environment (P-E) Fit calculation. We matrix the end-user's specific anthropometric and mobility profile against the identified geometric barriers to calculate spatial risk severity.</p>
-        </div>
-        <div class="border border-zinc-200 bg-white p-6 -mt-px">
-          <p class="mono-font text-xs tracking-widest text-blue-950 mb-2">03 // ARCHITECTURAL TRANSLATION</p>
-          <p class="text-zinc-600">Spatial-to-Architectural translation. We resolve the friction by converting mobility requirements into precise ANSI A117.1 spatial geometries — every clearance documented to the exact dimensions your build team needs.</p>
-        </div>
-        <div class="border border-zinc-200 bg-white p-6 -mt-px">
-          <p class="mono-font text-xs tracking-widest text-blue-950 mb-2">04 // MATERIAL SPECIFICATION</p>
-          <p class="text-zinc-600">Universal Design specification. We provide the hardware, fixture, and smart-home integration recommendations that weave accessibility into the design invisibly, so the finished space never looks institutional.</p>
+        <div class="bg-white p-8">
+          <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-3">// FOR HOMEOWNERS &amp; FAMILIES</p>
+          <h2 class="text-2xl font-bold tracking-tight mb-3">Clinical Evaluations — In Formation</h2>
+          <p class="text-sm text-zinc-600 leading-relaxed">A dedicated clinical evaluation practice is being formed under a separate, clinician-owned professional entity. Join below and select Homeowner / Family to be notified at launch. No medical information is collected at this stage.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 3: Client Intake Form -->
-  <section id="intake" class="max-w-5xl mx-auto py-24 px-6 bg-zinc-50 relative">
-    <div class="absolute -top-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -top-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -bottom-1.5 -left-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <div class="absolute -bottom-1.5 -right-1.5 text-zinc-400 text-[10px] leading-none select-none font-mono">+</div>
-    <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-4">// INTAKE</p>
-    <h2 class="brand-font text-3xl font-bold tracking-tighter mb-4">Intake Protocol</h2>
-    <p class="text-zinc-600 max-w-2xl mb-12">Submit your project for audit. We confirm scope and flat-fee pricing before work begins.</p>
-    <!-- FORM INTEGRATION: submissions post to Formspree ("Audit Intake") and forward to intake@anthrospecadvisory.com -->
-    <form action="https://formspree.io/f/xvkgjejq" method="post" class="bg-white border border-zinc-200 p-8 md:p-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  <!-- Credentials Band -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <p class="mono-font text-xs tracking-widest uppercase text-orange-600 mb-8">// CREDENTIALS</p>
+    <div class="grid md:grid-cols-3 gap-px bg-zinc-300 border border-zinc-300">
+      <div class="bg-white p-6">
+        <p class="brand-font text-2xl font-bold tracking-tight">OTR/L</p>
+        <p class="mono-font text-[10px] uppercase tracking-wider text-zinc-500 mt-1">Registered &amp; Licensed Occupational Therapists</p>
+      </div>
+      <div class="bg-white p-6">
+        <p class="brand-font text-2xl font-bold tracking-tight">CDP</p>
+        <p class="mono-font text-[10px] uppercase tracking-wider text-zinc-500 mt-1">Certified Dementia Practitioners</p>
+      </div>
+      <div class="bg-white p-6">
+        <p class="brand-font text-2xl font-bold tracking-tight">CAPS</p>
+        <p class="mono-font text-[10px] uppercase tracking-wider text-zinc-500 mt-1">NAHB Certified Aging-in-Place Specialists</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join the List -->
+  <div id="waitlist-form" class="max-w-xl mx-auto px-6 py-16 relative">
+    <p class="mono-font text-xs tracking-widest uppercase text-orange-600 mb-4">// JOIN THE LIST</p>
+    <h2 class="text-3xl font-bold tracking-tight mb-3">One List, Two Programs</h2>
+    <p class="text-sm text-zinc-600 leading-relaxed mb-8">Tell us who you are and we will route you to the right list — contractor collaboration onboarding or clinical practice launch notification.</p>
+    <div class="bg-white border border-zinc-300 p-6 md:p-8">
+      <!-- FORM BACKEND: submissions post to Formspree ("Waitlist Intake") and forward to intake@anthrospecadvisory.com -->
+      <form action="https://formspree.io/f/xvkgjejq" method="POST" class="space-y-4">
         <div>
-          <label for="intake-name" class="mono-font text-xs tracking-widest uppercase text-zinc-500 block mb-2">FULL NAME</label>
-          <input type="text" id="intake-name" name="name" required class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 text-blue-950 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all duration-75">
+          <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Full Name</label>
+          <input type="text" name="name" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none">
         </div>
         <div>
-          <label for="intake-company" class="mono-font text-xs tracking-widest uppercase text-zinc-500 block mb-2">COMPANY</label>
-          <input type="text" id="intake-company" name="company" class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 text-blue-950 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all duration-75">
+          <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Company (Contractors)</label>
+          <input type="text" name="company" class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none">
         </div>
-        <div class="md:col-span-2 border border-orange-500 bg-orange-50 p-4">
-          <p class="mono-font text-xs tracking-widest uppercase text-orange-600 mb-2">&#9888;&#65039; INTAKE COMPLIANCE NOTICE</p>
-          <p class="text-xs text-zinc-700 leading-relaxed">AnthroSpec Advisory evaluates spatial geometry, not medical conditions. Do not submit clinical diagnoses, patient medical records, or HIPAA-protected health information. Provide only physical room dimensions, site photos, and specific mobility device footprints (e.g., make/model).</p>
-        </div>
-        <div>
-          <label for="intake-email" class="mono-font text-xs tracking-widest uppercase text-zinc-500 block mb-2">EMAIL</label>
-          <input type="email" id="intake-email" name="email" required class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 text-blue-950 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all duration-75">
+        <div class="border border-orange-500 bg-orange-50 p-4">
+          <p class="mono-font text-xs tracking-widest uppercase text-orange-600 mb-2">&#9888;&#65039; SUBMISSION NOTICE</p>
+          <p class="text-xs text-zinc-700 leading-relaxed">This form is for program inquiries and launch notifications only. Do not submit medical diagnoses, health records, or other protected health information. AnthroSpec Advisory LLC does not provide clinical services; clinical evaluations, when launched, will be provided by a separate clinician-owned professional entity.</p>
         </div>
         <div>
-          <label for="intake-tier" class="mono-font text-xs tracking-widest uppercase text-zinc-500 block mb-2">AUDIT TIER</label>
-          <select id="intake-tier" name="tier" class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 text-blue-950 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all duration-75">
-            <option>TIER 01 — Standard Spatial Audit ($395)</option>
-            <option>TIER 02 — Advanced Environmental &amp; Smart Home ($595)</option>
-            <option>TIER 03 — Enterprise Verification Suite ($995)</option>
-            <option>Custom Scope / Portfolio Review</option>
+          <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Email</label>
+          <input type="email" name="email" required class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none">
+        </div>
+        <div>
+          <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">I am a</label>
+          <select name="audience" class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none">
+            <option value="Contractor / Builder">Contractor / Builder</option>
+            <option value="Homeowner / Family Member">Homeowner / Family Member</option>
+            <option value="Other">Other</option>
           </select>
         </div>
-      </div>
-      <div class="mb-8">
-        <label for="intake-details" class="mono-font text-xs tracking-widest uppercase text-zinc-500 block mb-2">PROJECT DETAILS</label>
-        <textarea id="intake-details" name="details" rows="5" class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 text-blue-950 placeholder:text-zinc-400 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all duration-75"></textarea>
-      </div>
-      <button type="submit" class="mono-font text-xs tracking-widest uppercase bg-blue-950 text-white border border-blue-950 px-8 py-4 hover:bg-orange-500 hover:border-orange-500 hover:text-white active:scale-[0.98] transition-all transition-transform duration-75">SUBMIT INTAKE</button>
-    </form>
-  </section>
+        <div>
+          <label class="block mono-font text-[10px] uppercase tracking-wider text-zinc-500 mb-1">Details (Optional)</label>
+          <textarea name="details" rows="4" class="w-full border border-zinc-300 bg-zinc-50 px-3 py-2 text-sm focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none"></textarea>
+        </div>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="bg-blue-950 text-white mono-font text-xs uppercase tracking-widest py-3 px-6 hover:bg-orange-500 hover:text-white transition-colors duration-150 w-full inline-block text-center cursor-pointer">
+          Join the List
+        </button>
+      </form>
+    </div>
+  </div>
 
-  <!-- Section 4: Footer / Telemetry -->
+  <!-- Telemetry Footer -->
   <footer class="bg-zinc-50">
     <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col items-center gap-y-2 mono-font text-[10px] text-zinc-400 tracking-widest uppercase text-center">
       <span>&copy; 2026 AnthroSpec Advisory LLC</span>
@@ -262,7 +155,7 @@
     <div class="border-t border-zinc-200 bg-white">
       <div class="max-w-5xl mx-auto px-6 py-6">
         <p class="mono-font text-xs tracking-widest uppercase text-zinc-500 mb-2">Legal &amp; Scope Disclosure</p>
-        <p class="text-[11px] text-zinc-500 leading-relaxed">AnthroSpec Advisory LLC provides non-structural, environmental spatial consulting based on ICC/ANSI A117.1 residential benchmarks and Universal Design principles. AnthroSpec does not provide medical diagnostic, architectural, or structural engineering services. All field dimensions, code adherence, and physical construction implementations are the sole responsibility of the executing General Contractor.</p>
+        <p class="text-[11px] text-zinc-500 leading-relaxed">AnthroSpec Advisory LLC provides non-structural, environmental spatial consulting based on ICC/ANSI A117.1 residential benchmarks and Universal Design principles. AnthroSpec does not provide medical diagnostic, architectural, or structural engineering services. All field dimensions, code adherence, and physical construction implementations are the sole responsibility of the executing General Contractor. Clinical evaluation services referenced on this page are in formation and will be provided, when launched, by a separate clinician-owned professional entity.</p>
       </div>
     </div>
   </footer>
